@@ -101,7 +101,7 @@ const doesExist = (username) => {
 /**
  * Code to get a list of all books by means of axios.
  */
-axios.get('http://localhost:5001/')
+axios.get('http://localhost:5000/')
   .then(function (response) {
     console.log(response.data);
   })
@@ -116,7 +116,7 @@ axios.get('http://localhost:5001/')
  * Code to get book details based on ISBN by means of
  * axios.
  */
-axios.get('http://localhost:5001/isbn/1')
+axios.get('http://localhost:5000/isbn/1')
   .then(function (response) {
     console.log(response.data);
   })
@@ -131,7 +131,7 @@ axios.get('http://localhost:5001/isbn/1')
  * Code to get book details based on author by means of
  * axios.
  */
-axios.get('http://localhost:5001/author/Chinua Achebe')
+axios.get('http://localhost:5000/author/Chinua Achebe')
   .then(function (response) {
     console.log(response.data);
   })
@@ -146,7 +146,7 @@ axios.get('http://localhost:5001/author/Chinua Achebe')
  * Code to get book details based on title by means of
  * axios.
  */
-axios.get('http://localhost:5001/title/Things Fall Apart')
+axios.get('http://localhost:5000/title/Things Fall Apart')
   .then(function (response) {
     console.log(response.data);
   })
